@@ -8,7 +8,7 @@ type Task = {
 
 export const taskApi = createApi({
     reducerPath: "taskApi",
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8080/api/" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://master.d1tal2nsim9bh3.amplifyapp.com/api/" }),
     tagTypes: ["Task"],
     endpoints: (build) => ({
         getTasks: build.query<Task[], void>({
